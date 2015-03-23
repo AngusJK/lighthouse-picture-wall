@@ -17,6 +17,10 @@ body {
 #team-members .member img {
   width: 200px;
   height: 200px;
+  opacity: 0.5;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #team-members .member div.name {
@@ -28,4 +32,9 @@ body {
   h1 {
     color: $primaryColor; 
   }
+}
+
+#team-members .member img:hover { 
+  opacity: 1.0;
+  border: solid $primaryColor 1px;
 }
